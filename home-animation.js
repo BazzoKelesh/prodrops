@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
               .forEach((target) => target.classList.remove("active"));
             document
               .querySelectorAll(".background-chair:not(.active)")
-              .forEach((target) => target.classList.remove("active"));
+              .forEach((target) => target.classList.add("active"));
             document
               .querySelectorAll(".background-player-throwing-effect")
               .forEach((target) => target.classList.remove("active"));
@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
               .querySelectorAll(".background-player-throwing-card-2")
               .forEach((target) => target.classList.remove("active"));
           }
+          console.log("hero");
         });
       },
       {
